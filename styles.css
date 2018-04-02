@@ -1,0 +1,182 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.red {
+	color: red;
+}
+
+.block {
+	width: 99vw;
+	height: 99vh;
+	display: flex;
+}
+
+.block .container {
+	margin: auto;
+	position: relative;
+}
+
+.block .container #videoPlayer {
+	width: 60vw;
+}
+
+.block .container .controls {
+	color: #fff;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	opacity: 0;
+	transition-duration: 1s;
+}
+
+.block .container .controls:hover {
+	opacity: 0.8;
+}
+
+.block .container .controls .btnPause {
+	position: absolute;
+	font-size: 10em;
+	top: 30%;
+	left: 43%;
+}
+
+.block .container .controls .btnPlay {
+	position: absolute;
+	font-size: 10em;
+	top: 30%;
+	left: 43%;
+}
+
+.block .container .controls .btnReplay {
+	position: absolute;
+	font-size: 2em;
+	bottom: 4%;
+	right: 2%;
+}
+
+.block .container .controls .btnFullScreen {
+	position: absolute;
+	font-size: 2em;
+	bottom: 4%;
+	right: 8%;
+}
+
+.block .container .controls .progressBar {
+	position: absolute;
+	left: -1px;
+	bottom: 3px;
+	height: 7px;
+	width: 100%;
+}
+
+.block .container .controls .progressBar::-moz-progress-bar {
+	background-color: red;
+}
+
+.block .container .controls .volumeContainer {
+	display: flex;
+	position: absolute;
+	bottom: 4%;
+	left: 2%;
+}
+
+.block .container .controls .volumeContainer .btnMute {
+	font-size: 2em;
+	margin-right: 10px;
+}
+
+.block .container .controls .volumeContainer .slideVolume {
+	margin-top: 8px;
+}
+
+
+/* si écran moins de 1024px alors... */
+@media all and (max-width: 1024px) {
+	
+
+	.block .container .controls .btnPlay {
+		font-size: 8em;
+	}
+
+	.block .container .controls .btnPause {
+		font-size: 8em;
+	}
+
+	.block .container .controls .btnReplay {
+		font-size: 1.7em;
+	}
+
+	.block .container .controls .btnFullScreen {
+		font-size: 1.7em;
+	}
+
+	.block .container .controls .volumeContainer .btnMute {
+		font-size: 1.7em;
+	}
+
+	.block .container .controls .volumeContainer .slideVolume {
+		margin-top: 3px;
+	}
+}
+
+
+/* si écran moins de 950px alors... */
+@media all and (max-width: 950px) {
+	
+
+	.block .container .controls .btnPlay {
+		font-size: 6em;
+	}
+
+	.block .container .controls .btnPause {
+		font-size: 6em;
+	}
+
+	.block .container .controls .btnReplay {
+		font-size: 1.5em;
+	}
+
+	.block .container .controls .btnFullScreen {
+		font-size: 1.5em;
+	}
+
+	.block .container .controls .volumeContainer .btnMute {
+		font-size: 1.5em;
+	}
+
+	.block .container .controls .volumeContainer .slideVolume {
+		margin-top: 3px;
+	}
+}
+
+/* si écran moins de 740px alors... */
+@media all and (max-width: 740px) {
+	
+
+	.block .container .controls .btnPlay {
+		font-size: 4em;
+	}
+
+	.block .container .controls .btnPause {
+		font-size: 4em;
+	}
+
+	.block .container .controls .btnReplay {
+		font-size: 1.2em;
+	}
+
+	.block .container .controls .btnFullScreen {
+		font-size: 1.2em;
+	}
+
+	.block .container .controls .volumeContainer .btnMute {
+		font-size: 1.2em;
+	}
+
+	.block .container .controls .volumeContainer .slideVolume {
+		margin-top: 3px;
+	}
+}
